@@ -15,4 +15,14 @@ This submission includes the following:
 Running the script
 =================
 
-To reproduce the tidy data set (tidy_data.txt), simply source the file run_analysis.R on RStudio: source("run_analysis.R")
+To reproduce the tidy data set (tidy\_data.txt), simply source the file run\_analysis.R on RStudio: source("run_analysis.R")
+
+Analysis Steps
+==============
+
+- Step 1: Merge the training and the test sets to create one data set.
+ We start by binding the columns in subject\_train.txt, which has the IDs of the subjects performing activities, and y\_train.txt, which has the activity IDs for each observation, with X\_train.txt, which has the feature vectors for each observation.
+- Step 2: Extract only the measurements on the mean and standard deviation for each measurement. 
+- Step 3: Uses descriptive activity names to name the activities in the data set
+- Step 4: Appropriately labels the data set with descriptive variable names. 
+- Step 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
