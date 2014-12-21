@@ -1,0 +1,28 @@
+tBodyAcc -- Estimated.Acceleration.of.Body
+-mean()/std()-X/Y/Z -- .Mean/Standard.Deviation.in.X/Y/Z-axis
+
+tGravityAcc -- Gravitational.Acceleration
+
+tBodyAccJerk -- Jerk.from.Body.Linear.Acceleration
+
+tBodyGyro -- Angular.Velocity.of.Body.from.Gyroscope
+
+tBodyGyroJerk -- Jerk.from.Body.Angular.Velocity
+
+tBodyAccMag -- Magnitude.of.Acceleration.of.Body
+
+tGravityAccMag -- Magnitude.of.Gravitational.Acceleration
+
+tBodyGyroMag -- Magnitude.of.Angular.Velocity.of.Body.from.Gyroscope
+
+fBodyAcc -- Fast.Fourier.Transform.of.Body.Linear.Acceleration
+
+fBodyAccJerk -- Fast.Fourier.Transform.of.Jerk.from.Body.Linear.Acceleration
+
+fBodyGyro -- Fast.Fourier.Transform.of.Angular.Velocity.of.Body.from.Gyroscope
+
+fBodyAccMag -- Fast.Fourier.Transform.of.Magnitude.of.Acceleration.of.Body
+
+fBodyBodyAccJerkMag -- Fast.Fourier.Transform.of.Magnitude.of.Jerk.from.Body.Linear.Acceleration
+
+fBodyBodyGyroMag -- Fast.Fourier.Transform.of.Magnitude.of.Jerk.from.Body.Angular.Velocity
