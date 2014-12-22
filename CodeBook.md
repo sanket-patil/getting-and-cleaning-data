@@ -31,7 +31,23 @@ and test data separately.
 - Finally, we merged them together using the rbind operator.
 - Next, we assigned column names to all the columns in the unified data set. We used the file 'features.txt' to get
 the names of the variables, and assigned them as column names. Every row was also assigned a Subject and a Activity.
-- Step 2: We extracted  only the measurements on the mean and standard deviation for each measurement. 
-- Step 3: Uses descriptive activity names to name the activities in the data set
-- Step 4: Appropriately labels the data set with descriptive variable names. 
-- Step 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
+
+Step 2: 
+- We extracted  only the measurements on the mean and standard deviation for each measurement.
+- We used the 'grep' functionality in R to detect patterns for mean and std measurements.
+
+Step 3: 
+  - Next, we replaced the numeric code associated with the activities (Activities field) with descriptive names
+  - We converted the Activity field to a factor.
+  - We then used the names provided in 'activity\_labels.txt' file to assign levels to the Activity column.
+  
+Step 4: 
+  - All the column names were replaced with appropriate descriptive variable names
+  - We used the 'sapply' operator along with 'gsub' in a series of steps to achieve this.
+
+Step 5: 
+- Finally, in order to create an independent tidy data set with the average of each variable for each activity and each subject, we followed the following process.
+- We 'melted' the data frame from step 4 that had all the relevant variables using the melt function
+- We then used the 'dcast' function from the reshape2 library to compute the mean of each of the variable grouped by a Subject ID (Subject) and Activity Label (Activity)
+- The result of this is a new data frame that held the mean (average) of all relevant variables for each subject, activity combination.
+- Finally, we wrote this data frame to a file called 'tidy_data.txt' using write.table. This file holds the tidy data set that we might require for further analysis.
