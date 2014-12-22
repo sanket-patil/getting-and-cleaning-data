@@ -22,43 +22,16 @@ of each variable for each activity and each subject.
 Analysis Steps Followed to arrive at Tidy Data
 =============================================
 
-- Step 1:  We start by binding the columns in subject\_train.txt, which has the IDs of the subjects performing 
+Step 1:  
+- We start by binding the columns in subject\_train.txt, which has the IDs of the subjects performing 
 activities, and y\_train.txt, which has the activity IDs for each observation, with X\_train.txt, which has the 
-feature vectors for each observation. We use the cbind operator to merge the components of each of training data
-and test data separately. Finally, we merged them together using the rbind operator.
-
-Next, we assigned column names to all the columns in the unified data set. We used the file 'features.txt' to get
+feature vectors for each observation. 
+- We use the cbind operator to merge the components of each of training data
+and test data separately. 
+- Finally, we merged them together using the rbind operator.
+- Next, we assigned column names to all the columns in the unified data set. We used the file 'features.txt' to get
 the names of the variables, and assigned them as column names. Every row was also assigned a Subject and a Activity.
 - Step 2: We extracted  only the measurements on the mean and standard deviation for each measurement. 
 - Step 3: Uses descriptive activity names to name the activities in the data set
 - Step 4: Appropriately labels the data set with descriptive variable names. 
 - Step 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
-
-tBodyAcc -- Estimated.Acceleration.of.Body
--mean()/std()-X/Y/Z -- .Mean/Standard.Deviation.in.X/Y/Z-axis
-
-tGravityAcc -- Gravitational.Acceleration
-
-tBodyAccJerk -- Jerk.from.Body.Linear.Acceleration
-
-tBodyGyro -- Angular.Velocity.of.Body.from.Gyroscope
-
-tBodyGyroJerk -- Jerk.from.Body.Angular.Velocity
-
-tBodyAccMag -- Magnitude.of.Acceleration.of.Body
-
-tGravityAccMag -- Magnitude.of.Gravitational.Acceleration
-
-tBodyGyroMag -- Magnitude.of.Angular.Velocity.of.Body.from.Gyroscope
-
-fBodyAcc -- Fast.Fourier.Transform.of.Body.Linear.Acceleration
-
-fBodyAccJerk -- Fast.Fourier.Transform.of.Jerk.from.Body.Linear.Acceleration
-
-fBodyGyro -- Fast.Fourier.Transform.of.Angular.Velocity.of.Body.from.Gyroscope
-
-fBodyAccMag -- Fast.Fourier.Transform.of.Magnitude.of.Acceleration.of.Body
-
-fBodyBodyAccJerkMag -- Fast.Fourier.Transform.of.Magnitude.of.Jerk.from.Body.Linear.Acceleration
-
-fBodyBodyGyroMag -- Fast.Fourier.Transform.of.Magnitude.of.Jerk.from.Body.Angular.Velocity
