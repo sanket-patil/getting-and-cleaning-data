@@ -3,7 +3,7 @@ at a tidy data set starting from data collected from accelerometers from the Sam
 
 The details of the experiment are available on this page: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 In brief, this was the experimental menthodology to get the raw data: The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. 
-Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) 
+Each person performed six activities (WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING, STANDING, LAYING) 
 wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, 
 we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. 
 The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly 
@@ -55,17 +55,17 @@ Step 5:
 Details of Variables
 ====================
 
-- Subject: The identifier of a subject or a volunteer.
-- Activity 
-- Estimated.Acceleration.of.Body.Mean().X 
-- Estimated.Acceleration.of.Body.Mean().Y 
-- Estimated.Acceleration.of.Body.Mean().Z 
-- Estimated.Acceleration.of.Body.Standard.Deviation().X 
-- Estimated.Acceleration.of.Body.Standard.Deviation().Y 
-- Estimated.Acceleration.of.Body.Standard.Deviation().Z 
-- Gravitational.Acceleration.Mean().X 
-- Gravitational.Acceleration.Mean().Y 
-- Gravitational.Acceleration.Mean().Z 
+- Subject: The identifier of a subject or a volunteer. There were 30 volunteers. So, value range [1, 30]
+- Activity: One of six activities carried out by the subjects -- WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNSTAIRS, SITTING, STANDING, LAYING
+- Estimated.Acceleration.of.Body.Mean().X: Mean of the estimated triaxial acceleration from the accelerometer on the body in the X-axis. Range [-1, 1]
+- Estimated.Acceleration.of.Body.Mean().Y: Mean of the estimated triaxial acceleration from the accelerometer on the body in the Y-axis. Range [-1, 1] 
+- Estimated.Acceleration.of.Body.Mean().Z: Mean of the estimated triaxial acceleration from the accelerometer on the body in the Z-axis. Range [-1, 1]
+- Estimated.Acceleration.of.Body.Standard.Deviation().X: Standard Deviation of the estimated triaxial acceleration from the accelerometer on the body in the X-axis. Range [-1, 1]
+- Estimated.Acceleration.of.Body.Standard.Deviation().Y: Standard Deviation of the estimated triaxial acceleration from the accelerometer on the body in the Y-axis. Range [-1, 1] 
+- Estimated.Acceleration.of.Body.Standard.Deviation().Z: Standard Deviation of the estimated triaxial acceleration from the accelerometer on the body in the Z-axis. Range [-1, 1]
+- Gravitational.Acceleration.Mean().X: Mean of the gravitational accelration in the X-axis. Range [-1, 1] 
+- Gravitational.Acceleration.Mean().Y: Mean of the gravitational accelration in the Y-axis. Range [-1, 1] 
+- Gravitational.Acceleration.Mean().Z: Mean of the gravitational accelration in the Z-axis. Range [-1, 1]
 - Gravitational.Acceleration.Standard.Deviation().X 
 - Gravitational.Acceleration.Standard.Deviation().Y 
 - Gravitational.Acceleration.Standard.Deviation().Z 
