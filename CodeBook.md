@@ -2,12 +2,12 @@ This project was done as part of the Coursera course Getting and Cleaning Data. 
 at a tidy data set starting from data collected from accelerometers from the Samsung Galaxy S smartphone.
 
 The details of the experiment are available on this page: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
-In brief, this was the experimental menthodology to get the raw data: "The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. 
+In brief, this was the experimental menthodology to get the raw data: The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. 
 Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) 
 wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, 
 we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. 
 The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly 
-partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data."
+partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
 
 As part of the project, our task was the following analysis. 
 
@@ -51,3 +51,88 @@ Step 5:
 - We then used the 'dcast' function from the reshape2 library to compute the mean of each of the variable grouped by a Subject ID (Subject) and Activity Label (Activity)
 - The result of this is a new data frame that held the mean (average) of all relevant variables for each subject, activity combination.
 - Finally, we wrote this data frame to a file called 'tidy_data.txt' using write.table. This file holds the tidy data set that we might require for further analysis.
+
+Details of Variables
+====================
+
+- Subject: The identifier of a subject or a volunteer.
+- Activity 
+- Estimated.Acceleration.of.Body.Mean().X 
+- Estimated.Acceleration.of.Body.Mean().Y 
+- Estimated.Acceleration.of.Body.Mean().Z 
+- Estimated.Acceleration.of.Body.Standard.Deviation().X 
+- Estimated.Acceleration.of.Body.Standard.Deviation().Y 
+- Estimated.Acceleration.of.Body.Standard.Deviation().Z 
+- Gravitational.Acceleration.Mean().X 
+- Gravitational.Acceleration.Mean().Y 
+- Gravitational.Acceleration.Mean().Z 
+- Gravitational.Acceleration.Standard.Deviation().X 
+- Gravitational.Acceleration.Standard.Deviation().Y 
+- Gravitational.Acceleration.Standard.Deviation().Z 
+- Jerk.from.Body.Linear.Acceleration.Mean().X 
+- Jerk.from.Body.Linear.Acceleration.Mean().Y 
+- Jerk.from.Body.Linear.Acceleration.Mean().Z J
+- Jerk.from.Body.Linear.Acceleration.Standard.Deviation().X 
+- Jerk.from.Body.Linear.Acceleration.Standard.Deviation().Y 
+- Jerk.from.Body.Linear.Acceleration.Standard.Deviation().Z 
+- Angular.Velocity.of.Body.from.Gyroscope.Mean().X 
+- Angular.Velocity.of.Body.from.Gyroscope.Mean().Y 
+- Angular.Velocity.of.Body.from.Gyroscope.Mean().Z 
+- Angular.Velocity.of.Body.from.Gyroscope.Standard.Deviation().X
+- Angular.Velocity.of.Body.from.Gyroscope.Standard.Deviation().Y
+- Angular.Velocity.of.Body.from.Gyroscope.Standard.Deviation().Z 
+- Jerk.from.Body.Angular.Velocity.Mean().X 
+- Jerk.from.Body.Angular.Velocity.Mean().Y 
+- Jerk.from.Body.Angular.Velocity.Mean().Z 
+- Jerk.from.Body.Angular.Velocity.Standard.Deviation().X 
+- Jerk.from.Body.Angular.Velocity.Standard.Deviation().Y 
+- Jerk.from.Body.Angular.Velocity.Standard.Deviation().Z 
+- Magnitude.of.Acceleration.of.Body.Mean() 
+- Magnitude.of.Acceleration.of.Body.Standard.Deviation() 
+- Magnitude.of.Gravitational.Acceleration.Mean() 
+- Magnitude.of.Gravitational.Acceleration.Standard.Deviation() 
+- Jerk.from.Body.Linear.AccelerationMag.Mean() 
+- Jerk.from.Body.Linear.AccelerationMag.Standard.Deviation() 
+- Magnitude.of.Angular.Velocity.of.Body.from.Gyroscope.Mean()
+- Magnitude.of.Angular.Velocity.of.Body.from.Gyroscope.Standard.Deviation() 
+- Jerk.from.Body.Angular.VelocityMag.Mean() 
+- Jerk.from.Body.Angular.VelocityMag.Standard.Deviation() 
+- Fast.Fourier.Transform.of.Body.Linear.Acceleration.Mean().X 
+- Fast.Fourier.Transform.of.Body.Linear.Acceleration.Mean().Y 
+- Fast.Fourier.Transform.of.Body.Linear.Acceleration.Mean().Z
+- Fast.Fourier.Transform.of.Body.Linear.Acceleration.Standard.Deviation().X
+- Fast.Fourier.Transform.of.Body.Linear.Acceleration.Standard.Deviation().Y
+- Fast.Fourier.Transform.of.Body.Linear.Acceleration.Standard.Deviation().Z
+- Fast.Fourier.Transform.of.Body.Linear.Acceleration.MeanFreq().X
+- Fast.Fourier.Transform.of.Body.Linear.Acceleration.MeanFreq().Y 
+- Fast.Fourier.Transform.of.Body.Linear.Acceleration.MeanFreq().Z
+- Fast.Fourier.Transform.of.Jerk.from.Body.Linear.Acceleration.Mean().X
+- Fast.Fourier.Transform.of.Jerk.from.Body.Linear.Acceleration.Mean().Y
+- Fast.Fourier.Transform.of.Jerk.from.Body.Linear.Acceleration.Mean().Z
+- Fast.Fourier.Transform.of.Jerk.from.Body.Linear.Acceleration.Standard.Deviation().X
+- Fast.Fourier.Transform.of.Jerk.from.Body.Linear.Acceleration.Standard.Deviation().Y
+- Fast.Fourier.Transform.of.Jerk.from.Body.Linear.Acceleration.Standard.Deviation().Z
+- Fast.Fourier.Transform.of.Jerk.from.Body.Linear.Acceleration.MeanFreq().X
+- Fast.Fourier.Transform.of.Jerk.from.Body.Linear.Acceleration.MeanFreq().Y
+- Fast.Fourier.Transform.of.Jerk.from.Body.Linear.Acceleration.MeanFreq().Z
+- Fast.Fourier.Transform.of.Angular.Velocity.of.Body.from.Gyroscope.Mean().X
+- Fast.Fourier.Transform.of.Angular.Velocity.of.Body.from.Gyroscope.Mean().Y
+- Fast.Fourier.Transform.of.Angular.Velocity.of.Body.from.Gyroscope.Mean().Z
+- Fast.Fourier.Transform.of.Angular.Velocity.of.Body.from.Gyroscope.Standard.Deviation().X
+- Fast.Fourier.Transform.of.Angular.Velocity.of.Body.from.Gyroscope.Standard.Deviation().Y
+- Fast.Fourier.Transform.of.Angular.Velocity.of.Body.from.Gyroscope.Standard.Deviation().Z
+- Fast.Fourier.Transform.of.Angular.Velocity.of.Body.from.Gyroscope.MeanFreq().X
+- Fast.Fourier.Transform.of.Angular.Velocity.of.Body.from.Gyroscope.MeanFreq().Y
+- Fast.Fourier.Transform.of.Angular.Velocity.of.Body.from.Gyroscope.MeanFreq().Z
+- Fast.Fourier.Transform.of.Magnitude.of.Acceleration.of.Body.Mean()
+- Fast.Fourier.Transform.of.Magnitude.of.Acceleration.of.Body.Standard.Deviation()
+- Fast.Fourier.Transform.of.Magnitude.of.Acceleration.of.Body.MeanFreq()
+- Fast.Fourier.Transform.of.Magnitude.of.Jerk.from.Body.Linear.Acceleration.Mean()
+- Fast.Fourier.Transform.of.Magnitude.of.Jerk.from.Body.Linear.Acceleration.Standard.Deviation()
+- Fast.Fourier.Transform.of.Magnitude.of.Jerk.from.Body.Linear.Acceleration.MeanFreq()
+- Fast.Fourier.Transform.of.Magnitude.of.Jerk.from.Body.Angular.Velocity.Mean()
+- Fast.Fourier.Transform.of.Magnitude.of.Jerk.from.Body.Angular.Velocity.Standard.Deviation()
+- Fast.Fourier.Transform.of.Magnitude.of.Jerk.from.Body.Angular.Velocity.MeanFreq() 
+- fBodyBodyGyroJerkMag.Mean() 
+- fBodyBodyGyroJerkMag.Standard.Deviation() 
+- fBodyBodyGyroJerkMag.MeanFreq()
